@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ====================================================================
+       SEO - edit these once the designer's name and details are final.
+       og:image and og:url should become absolute URLs after deployment.
+       ==================================================================== -->
+  <title>Fashion Design Portfolio</title>
+  <meta name="description" content="[META_DESCRIPTION] One or two sentences describing the designer and the work, for search results.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fashion Design Portfolio">
+  <meta property="og:description" content="[META_DESCRIPTION] One or two sentences describing the designer and the work.">
+  <meta property="og:image" content="portfolio/optimized/folded-calico/01-bib-1080.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F7F5F0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared icons -->
+  <svg width="0" height="0" class="visually-hidden" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24ZM8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43l-.47-.01Z"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 32 12">
+      <path fill="none" stroke="currentColor" stroke-width="1" d="M0 6h30M25 1l5 5-5 5"/>
+    </symbol>
+  </svg>
+
+  <!-- ================================================================ HEADER -->
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="Back to the top of the page"><span data-bind="designer.name">[DESIGNER_NAME]</span></a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#work">Work</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#process">Process</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+        <li><a class="nav__link nav__link--accent" data-whatsapp hidden href="#contact">WhatsApp</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <ol class="menu__list">
+        <li><a class="menu__link" href="#work"><span>01</span>Work</a></li>
+        <li><a class="menu__link" href="#about"><span>02</span>About</a></li>
+        <li><a class="menu__link" href="#philosophy"><span>03</span>Philosophy</a></li>
+        <li><a class="menu__link" href="#process"><span>04</span>Process</a></li>
+        <li><a class="menu__link" href="#contact"><span>05</span>Contact</a></li>
+      </ol>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--solid" data-whatsapp hidden href="#contact">
+        <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp
+      </a>
+      <p class="caps"><a data-link="email" href="#contact">Email</a> &nbsp;/&nbsp; <a data-link="instagram" href="#contact">Instagram</a></p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================================================================ HERO -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <h1 class="masthead" id="masthead">
+        <span class="visually-hidden" data-bind="designer.name">[DESIGNER_NAME]</span>
+        <span class="masthead__lines" aria-hidden="true"></span>
+      </h1>
+
+      <div class="hero__rule caps">
+        <span data-bind="site.hero.eyebrow">Fashion Design Portfolio</span>
+        <span class="hero__rule-mid" data-bind="site.hero.edition">Selected Works</span>
+        <span class="hero__rule-end" data-bind="contact.location">[DESIGNER_LOCATION]</span>
+      </div>
+
+      <div class="hero__stage">
+        <div class="hero__copy">
+          <p class="hero__statement" data-bind="site.hero.statement">Studies in form, fold and silhouette.</p>
+          <a class="link-arrow" href="#work">
+            <span data-bind="site.hero.cta">Explore the Work</span>
+            <svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </div>
+        <figure class="hero__main" data-slot="hero"></figure>
+        <figure class="hero__detail" data-slot="heroDetail"></figure>
+        <p class="hero__scroll caps" aria-hidden="true">Scroll</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ WORK -->
+    <section class="section works" id="work" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="eyebrow" data-reveal><span>01</span>Portfolio</p>
+        <h2 class="display" id="work-title" data-reveal data-bind="site.works.heading">Selected Works</h2>
+        <p class="section-head__intro" data-reveal data-bind="site.works.intro"></p>
+      </header>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter collections by category" data-reveal></div>
+      <p class="visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
+
+      <div class="spreads" id="spreads"></div>
+
+      <noscript><p class="notice">The portfolio gallery needs JavaScript to load its images.</p></noscript>
+    </section>
+
+    <!-- =============================================================== ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about__portrait">
+        <figure data-slot="portrait" data-reveal="image"></figure>
+        <p class="caption"><span data-bind="designer.name">[DESIGNER_NAME]</span> &mdash; <span data-bind="designer.role">Fashion Designer</span></p>
+      </div>
+
+      <div class="about__text">
+        <p class="eyebrow" data-reveal><span>02</span>About</p>
+        <h2 class="visually-hidden" id="about-title">About the designer</h2>
+        <p class="about__intro" data-reveal data-bind="designer.intro">[DESIGNER_INTRO]</p>
+        <div class="about__bio prose" data-reveal data-bind-paragraphs="designer.biography"><p>[DESIGNER_BIO]</p></div>
+        <dl class="about__details" id="about-details"></dl>
+      </div>
+    </section>
+
+    <!-- ========================================================== PHILOSOPHY -->
+    <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+      <p class="eyebrow" data-reveal><span>03</span>Philosophy</p>
+      <h2 class="visually-hidden" id="philosophy-title">Creative philosophy</h2>
+      <blockquote class="philosophy__quote" data-reveal>
+        <p data-bind="designer.quote">[DESIGNER_QUOTE]</p>
+      </blockquote>
+      <ol class="principles" id="principles"></ol>
+    </section>
+
+    <!-- ============================================================= PROCESS -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="process__aside">
+        <p class="eyebrow" data-reveal><span>04</span>Process</p>
+        <h2 class="display" id="process-title" data-reveal>From idea <em>to form</em></h2>
+        <p class="process__intro" data-reveal data-bind="designer.process.intro">[PROCESS_INTRO]</p>
+        <figure class="process__figure" data-slot="process" data-reveal="image"></figure>
+      </div>
+      <ol class="stages" id="stages"></ol>
+    </section>
+
+    <!-- ============================================================= CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__lead">
+        <p class="eyebrow" data-reveal><span>05</span>Contact</p>
+        <h2 class="display display--xl" id="contact-title" data-reveal data-bind="contact.heading">Enquiries</h2>
+      </div>
+
+      <div class="contact__body">
+        <p class="contact__invite" data-reveal data-bind="contact.invitation"></p>
+
+        <div class="contact__actions" data-reveal>
+          <a class="btn btn--solid" data-whatsapp hidden href="#contact">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>Message on WhatsApp
+          </a>
+          <p class="notice" data-whatsapp-missing hidden>
+            <strong>WhatsApp is not connected yet.</strong>
+            Add the number in <code>content/contact.js</code> and the button appears here, in the menu and in the footer.
+          </p>
+          <a class="btn" data-link="email" data-label="Write an email" href="#contact">Write an email</a>
+        </div>
+
+        <dl class="contact__list" data-reveal>
+          <div><dt>Email</dt><dd><a data-link="email" data-show="value" href="#contact">[CONTACT_EMAIL]</a></dd></div>
+          <div><dt>Instagram</dt><dd><a data-link="instagram" data-show="value" href="#contact">[INSTAGRAM_URL]</a></dd></div>
+          <div><dt>Location</dt><dd data-bind="contact.location">[DESIGNER_LOCATION]</dd></div>
+        </dl>
+
+        <p class="contact__note" data-reveal data-bind="contact.enquiryNote" data-hide-empty></p>
+      </div>
+    </section>
+
+    <!-- ============================================================== SOCIAL -->
+    <section class="section social" id="social" aria-labelledby="social-title">
+      <header class="social__head">
+        <div>
+          <p class="eyebrow" data-reveal><span>06</span>Instagram</p>
+          <h2 class="display" id="social-title" data-reveal data-bind="site.social.heading">Follow the work</h2>
+        </div>
+        <div class="social__links" data-reveal>
+          <a class="social__handle" data-link="instagram" data-show="value" href="#contact">[INSTAGRAM_URL]</a>
+          <ul class="social__more caps" id="social-more"></ul>
+        </div>
+      </header>
+      <div class="strip" id="strip" aria-label="A selection from the portfolio"></div>
+    </section>
+  </main>
+
+  <!-- ================================================================ FOOTER -->
+  <footer class="site-footer" id="site-footer">
+    <p class="site-footer__name" data-bind="designer.name">[DESIGNER_NAME]</p>
+
+    <div class="site-footer__cols">
+      <nav aria-label="Footer">
+        <ul class="caps">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="caps" id="footer-contact">
+        <li data-whatsapp-item hidden><a data-whatsapp hidden href="#contact">WhatsApp</a></li>
+        <li><a data-link="instagram" data-label="Instagram" href="#contact">Instagram</a></li>
+        <li><a data-link="email" data-label="Email" href="#contact">Email</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__base caps">
+      <p>&copy; <span id="year">2026</span> <span data-bind="designer.name">[DESIGNER_NAME]</span>. All rights reserved.</p>
+      <a class="to-top" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp shortcut (small screens, only once a number is set) -->
+  <a class="wa-fab" data-whatsapp hidden href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg></a>
+
+  <!-- ==================================================== COLLECTION OVERLAY -->
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet__bar caps">
+      <span id="sheet-count" aria-hidden="true"></span>
+      <button class="sheet__close" id="sheet-close" type="button">Close <span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="sheet__scroll" id="sheet-scroll" tabindex="-1">
+      <article class="sheet__content" id="sheet-content"></article>
+    </div>
+  </div>
+
+  <!-- Content (edit these) -->
+  <script src="content/site.config.js"></script>
+  <script src="content/designer.js"></script>
+  <script src="content/contact.js"></script>
+  <script src="portfolio/portfolio.config.js"></script>
+  <!-- Generated by tools/build_portfolio.py -->
+  <script src="portfolio/manifest.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
